@@ -5,6 +5,31 @@ import (
 	"fmt"
 )
 
+func sum(first int, second int) (result int) {
+	result = first + second
+	return
+}
+
+func substract(first int, second int) (result int) {
+	result = first - second
+	return
+}
+
+func multiply(first int, second int) (result int) {
+	result = first * second
+	return
+}
+
+func divided(first int, second int) (result int) {
+	result = first / second
+	return
+}
+
+func modulo(first int, second int) (result int) {
+	result = first % second
+	return
+}
+
 func main() {
 	// Calculator
 	var first int
@@ -19,22 +44,23 @@ func main() {
 
 	switch {
 	case op == "+":
-		sum := first + second
-		fmt.Printf("Result of %d + %d = %d \n", first, second, sum)
+		total := sum(first, second)
+		fmt.Printf("Result of %d + %d = %d \n", first, second, total)
 	case op == "-":
-		substract := first - second
-		fmt.Printf("Result of %d - %d = %d \n", first, second, substract)
+		total := substract(first, second)
+		fmt.Printf("Result of %d - %d = %d \n", first, second, total)
 	case op == "*":
-		multiply := first * second
-		fmt.Printf("Result of %d * %d = %d \n", first, second, multiply)
+		total := multiply(first, second)
+		fmt.Printf("Result of %d * %d = %d \n", first, second, total)
 	case op == "/":
-		divided := first / second
-		fmt.Printf("Result of %d / %d = %d \n", first, second, divided)
+		total := divided(first, second)
+		fmt.Printf("Result of %d / %d = %d \n", first, second, total)
 	case op == "%":
-		modulo := first % second
-		fmt.Printf("Result of %d % %d = %d \n", first, second, modulo)
+		total := modulo(first, second)
+		fmt.Printf("Result of %d % %d = %d \n", first, second, total)
 	default:
 		fmt.Println("Silahkan coba lagi \n")
 	}
 
 }
+
