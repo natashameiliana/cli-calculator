@@ -59,7 +59,7 @@ func main() {
 		total := modulo(first, second)
 		fmt.Printf("Result of %d % %d = %d \n", first, second, total)
 	default:
-		fmt.Println("Silahkan coba lagi \n")
+		fmt.Println("Silakan coba lagi \n")
 	}
 
 }
